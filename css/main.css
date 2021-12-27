@@ -75,4 +75,39 @@ ul {
   font-size: 1rem;
   line-height: 1.625rem;
 }
+
+.btn {
+  color: white;
+  display: inline-block;
+  flex-direction: row;
+}
+
+.btn--forward {
+  background: linear-gradient(to right, #141414 72.55%, #d5966c 27.45%);
+  padding: 1.5rem 0 1.75rem 2rem;
+  padding: 1.5rem;
+}
+
+.btn--forward::after {
+  content: "";
+  background-image: url("../assets/icon-arrow-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline;
+  padding: 1.5rem;
+}
+
+.btn--back {
+  background: linear-gradient(to left, #141414 72.55%, #d5966c 27.45%);
+  padding: 1.5rem;
+}
+
+.btn--back::before {
+  content: "";
+  background-image: url("../assets/icon-arrow-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline;
+  padding: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */
