@@ -1,5 +1,9 @@
 %margin {
     margin: 0 small(16);
+
+    @include media-M {
+      margin: 0 medium(40);
+    }
   }
   
   %deep-margin {

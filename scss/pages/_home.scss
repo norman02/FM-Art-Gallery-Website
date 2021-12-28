@@ -1,8 +1,15 @@
 
 .home {
     background-color: $main-bg-color;
-  
+
     header {
+
+        @include media-M {
+            background-color: transparent;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
       h1,
       p,
       .btn {
@@ -13,18 +20,31 @@
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
-        height: 240px;
-        width: 375px;
         height: small(240);
         width: small(375);
+
+        @include media-M {
+            background-image: url('../assets/tablet/image-hero.jpg');
+            height: medium(700);
+            margin-right: medium(-90);
+            width: medium(437);
+        }
       }
   
       h1 {
         margin-top: rem(32);
+
+        @include media-M {
+            margin-top: rem(145);
+        }
       }
   
       p {
         margin-bottom: rem(37);
+
+        @include media-M {
+            margin-bottom: rem(53);
+        }
       }
   
       .btn {
@@ -34,38 +54,93 @@
   
     main {
       @extend %margin;
+
+      @include media-M {
+          margin-top: rem(120);
+      }
   
       .img {
         display: block;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
       }
   
       .first {
+
+        @include media-M {
+            display: grid;
+            grid-template-areas: 
+            'header img'
+            'para img'
+            'x img';
+
+            h2 {
+                grid-area: header;
+                margin-top: rem(36);
+            }
+
+            p {
+                grid-area: para;
+            }
+            
+        }
         .img {
           background-image: url("../assets/mobile/image-grid-1.jpg");
           height: small(320);
           margin-bottom: rem(25);
           width: small(343);
+
+          @include media-M {
+              grid-area: img;
+              background-image: url('../assets/tablet/image-grid-1.jpg');
+              height: medium(400);
+              width: medium(398);
+          }
         }
       }
   
       .second {
         margin-top: rem(37);
+
+        @include media-M{
+            display: grid;
+            column-gap: rem(11);
+            grid-template-areas: 'img1 img2' 'img1 txt' 'img1 x';
+            margin-top: 0;
+            row-gap: rem(11);
+        }
   
         .img {
           margin-bottom: rem(16);
+
+          @include media-M {
+              margin-bottom: 0;
+          }
   
           &--one {
             background-image: url("../assets/mobile/image-grid-2.jpg");
             height: small(480);
             width: small(343);
+
+            @include media-M {
+                background-image: url('../assets/tablet/image-grid-2.jpg');
+                grid-area: img1;
+                height: medium(720);
+                width: medium(398);
+            }
           }
   
           &--two {
             background-image: url("../assets/mobile/image-grid-3.jpg");
             height: small(200);
             width: small(343);
+
+            @include media-M {
+                background-image: url('../assets/tablet/image-grid-3.jpg');
+                grid-area: img2;
+                height: medium(313);
+                width: medium(280);
+            }
           }
         }
   
@@ -74,16 +149,33 @@
           color: $lt-txt-color;
           padding-bottom: rem(52);
           padding-top: rem(48);
+
+          @include media-M {
+              display: flex;
+              flex-direction: column;
+              grid-area: txt;
+              height: medium(396);
+              padding: 0;
+              width: medium(280);
+          }
   
           h2 {
             @extend %deep-margin;
             color: $lt-txt-color;
+
+            @include media-M {
+                margin: medium(85) medium(28) 0 medium(28);
+            }
           }
   
           p {
             @extend %deep-margin;
             margin-top: rem(19);
             color: $lt-txt-color;
+
+            @include media-M {
+                margin: rem(19) medium(28);
+            }
           }
         }
       }

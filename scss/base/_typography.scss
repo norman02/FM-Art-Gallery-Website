@@ -26,6 +26,11 @@
 .heading-XL {
     font-size: rem(60);
     line-height: rem(55);
+
+    @include media-M {
+        font-size: rem(70);
+        line-height: rem(65);
+    }
 }
 
 .heading-L {

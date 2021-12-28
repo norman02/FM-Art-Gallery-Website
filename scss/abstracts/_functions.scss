@@ -7,3 +7,8 @@
 @function small($pixel) {
     @return ($pixel / 375 * 100) + vw;
   }
+
+  // convert pixel to medium screen view width
+@function medium($pixel) {
+    @return ($pixel / 768 * 100) + vw;
+  }
