@@ -37,8 +37,7 @@ ul {
   font-family: 'Big Shoulders Display', cursive;
 }
 
-.heading-XL
-.heading-L,
+.heading-XL .heading-L,
 .heading-M,
 .heading-S {
   font-weight: 900;
@@ -109,5 +108,36 @@ ul {
   background-repeat: no-repeat;
   display: inline;
   padding: 1.5rem;
+}
+
+h1,
+h2,
+p,
+.btn,
+.pic, .home header h1, .home header .btn {
+  margin: 0 4.26667vw;
+}
+
+.home {
+  background-color: white;
+}
+
+.home header .img {
+  background-image: url("../assets/mobile/image-hero@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 240px;
+  width: 375px;
+  height: 64vw;
+  width: 100vw;
+}
+
+.home header h1 {
+  margin-top: 2rem;
+}
+
+.home header p {
+  margin-bottom: 2.3125rem;
 }
 /*# sourceMappingURL=main.css.map */

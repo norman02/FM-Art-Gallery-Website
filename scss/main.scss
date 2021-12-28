@@ -5,3 +5,53 @@
 @import 'base/typography';
 
 @import 'components/buttons';
+
+// convert pixel to small screen view width
+@function small($pixel) {
+    @return ($pixel / 375 * 100) + vw;
+}
+
+%margin {
+    margin: 0 small(16);
+}
+
+h1,
+h2,
+p,
+.btn,
+.pic {
+    @extend %margin;
+}
+
+.home {
+
+    background-color: $main-bg-color;
+
+    header {
+
+       .img {
+           background-image: url('../assets/mobile/image-hero@2x.jpg');
+           background-repeat: no-repeat;
+           background-size: contain;
+           display: block;
+           height: 240px;
+           width: 375px;
+           height: small(240);
+           width: small(375);
+       } 
+
+       h1 {
+           @extend %margin;
+           margin-top: rem(32);
+       }
+
+       p {
+           
+           margin-bottom: rem(37);
+       }
+
+       .btn {
+           @extend %margin;
+       }
+    }
+}
