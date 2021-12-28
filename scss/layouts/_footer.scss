@@ -3,19 +3,41 @@
     margin-top: rem(120);
     padding: rem(48) 0;
 
+    @include media-M {
+        align-items: initial;
+        display: grid;
+        grid-template-columns: medium(214) medium(281) auto;
+        justify-content: center;
+        padding: rem(56) 0;
+
+    }
+
     h2,
     p,
     ul {
       @extend %margin;
       color: $lt-txt-color;
+      
+      @include media-M {
+          margin: 0;
+      }
     }
 
     p {
         padding-top: rem(38);
+
+        @include media-M {
+            padding-top: 0;
+        }
     }
 
     .social {
         margin-top: rem(44);
+
+        @include media-M {
+            margin-top: 0;
+            margin-left: medium(100);
+        }
 
         li {
             display: inline;

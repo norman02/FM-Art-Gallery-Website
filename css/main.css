@@ -149,18 +149,49 @@ ul {
   padding: 3rem 0;
 }
 
+@media screen and (min-width: 700px) {
+  .footer {
+    align-items: initial;
+    display: grid;
+    grid-template-columns: 27.86458vw 36.58854vw auto;
+    justify-content: center;
+    padding: 3.5rem 0;
+  }
+}
+
 .footer h2,
 .footer p,
 .footer ul {
   color: white;
 }
 
+@media screen and (min-width: 700px) {
+  .footer h2,
+  .footer p,
+  .footer ul {
+    margin: 0;
+  }
+}
+
 .footer p {
   padding-top: 2.375rem;
 }
 
+@media screen and (min-width: 700px) {
+  .footer p {
+    padding-top: 0;
+  }
+}
+
 .footer .social {
   margin-top: 2.75rem;
+}
+
+@media screen and (min-width: 700px) {
+  .footer .social {
+    margin-top: 0;
+    margin-left: 13.02083vw;
+  }
 }
 
 .footer .social li {
