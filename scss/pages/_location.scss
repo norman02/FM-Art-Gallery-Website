@@ -5,26 +5,52 @@
       background-size: cover;
       height: small(550);
       width: 100vw;
+
+      @include media-M {
+        background-image: url('../assets/tablet/image-map.png');
+        height: medium(600);
+
+        .btn {
+          margin-left: medium(40);
+        }
+      }
     }
   
     main {
       padding-bottom: rem(61);
       padding-top: rem(48);
       background-color: $black;
+
+      @include media-M {
+        display: grid;
+        grid-template-areas: 'heading address' 'heading para';
+        padding-bottom: rem(85);
+        padding-top: rem(88)
+      }
       h1,
       li,
       p {
         @extend %margin;
         color: $white;
+
+        @include media-M {
+          margin: 0 medium(40);
+        }
       }
   
       .heading-M {
         color: $orange;
+        grid-area: heading;
         margin-bottom: rem(32);
       }
   
       ul {
+        grid-area: address;
         margin-bottom: rem(32);
+      }
+
+      p {
+        grid-area: para;
       }
     }
   

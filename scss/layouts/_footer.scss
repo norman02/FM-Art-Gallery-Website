@@ -17,10 +17,6 @@
     ul {
       @extend %margin;
       color: $lt-txt-color;
-      
-      @include media-M {
-          margin: 0;
-      }
     }
 
     p {

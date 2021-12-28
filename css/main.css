@@ -165,14 +165,6 @@ ul {
   color: white;
 }
 
-@media screen and (min-width: 700px) {
-  .footer h2,
-  .footer p,
-  .footer ul {
-    margin: 0;
-  }
-}
-
 .footer p {
   padding-top: 2.375rem;
 }
@@ -396,10 +388,29 @@ ul {
   width: 100vw;
 }
 
+@media screen and (min-width: 700px) {
+  .location header {
+    background-image: url("../assets/tablet/image-map.png");
+    height: 78.125vw;
+  }
+  .location header .btn {
+    margin-left: 5.20833vw;
+  }
+}
+
 .location main {
   padding-bottom: 3.8125rem;
   padding-top: 3rem;
   background-color: #141414;
+}
+
+@media screen and (min-width: 700px) {
+  .location main {
+    display: grid;
+    grid-template-areas: 'heading address' 'heading para';
+    padding-bottom: 5.3125rem;
+    padding-top: 5.5rem;
+  }
 }
 
 .location main h1,
@@ -408,13 +419,27 @@ ul {
   color: white;
 }
 
+@media screen and (min-width: 700px) {
+  .location main h1,
+  .location main li,
+  .location main p {
+    margin: 0 5.20833vw;
+  }
+}
+
 .location main .heading-M {
   color: #d5966c;
+  grid-area: heading;
   margin-bottom: 2rem;
 }
 
 .location main ul {
+  grid-area: address;
   margin-bottom: 2rem;
+}
+
+.location main p {
+  grid-area: para;
 }
 
 .location .footer {
