@@ -110,12 +110,16 @@ ul {
   padding: 1.5rem;
 }
 
-h1,
-h2,
-p,
-.btn,
-.pic, .home header h1, .home header .btn {
+.home header h1,
+.home header p,
+.home header .btn, .home main, .home footer h2,
+.home footer p,
+.home footer ul {
   margin: 0 4.26667vw;
+}
+
+.home main .second .text-box h2, .home main .second .text-box p {
+  margin: 0 6.4vw;
 }
 
 .home {
@@ -139,5 +143,79 @@ p,
 
 .home header p {
   margin-bottom: 2.3125rem;
+}
+
+.home header .btn {
+  margin-bottom: 7.5rem;
+}
+
+.home main .img {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home main .first .img {
+  background-image: url("../assets/mobile/image-grid-1.jpg");
+  height: 85.33333vw;
+  margin-bottom: 1.5625rem;
+  width: 91.46667vw;
+}
+
+.home main .second {
+  margin-top: 2.3125rem;
+}
+
+.home main .second .img {
+  margin-bottom: 1rem;
+}
+
+.home main .second .img--one {
+  background-image: url("../assets/mobile/image-grid-2.jpg");
+  height: 128vw;
+  width: 91.46667vw;
+}
+
+.home main .second .img--two {
+  background-image: url("../assets/mobile/image-grid-3.jpg");
+  height: 53.33333vw;
+  width: 91.46667vw;
+}
+
+.home main .second .text-box {
+  background-color: #141414;
+  color: white;
+  padding-bottom: 3.25rem;
+  padding-top: 3rem;
+}
+
+.home main .second .text-box h2 {
+  color: white;
+}
+
+.home main .second .text-box p {
+  margin-top: 1.1875rem;
+  color: white;
+}
+
+.home footer {
+  background-color: #141414;
+  margin-top: 7.5rem;
+  padding: 3rem 0;
+}
+
+.home footer h2,
+.home footer p,
+.home footer ul {
+  color: white;
+}
+
+.home footer .social {
+  margin-top: 2.75rem;
+}
+
+.home footer .social li {
+  display: inline;
+  margin-right: 1.25rem;
 }
 /*# sourceMappingURL=main.css.map */
