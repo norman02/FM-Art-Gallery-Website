@@ -2,3 +2,8 @@
 @function rem($pixel) {
     @return ($pixel / 16) + rem;
 }
+
+// convert pixel to small screen view width
+@function small($pixel) {
+    @return ($pixel / 375 * 100) + vw;
+  }

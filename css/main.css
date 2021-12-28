@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300;500&display=swap");
+.footer h2,
+.footer p,
+.footer ul, .home header h1,
+.home header p,
+.home header .btn, .home main, .location main h1,
+.location main li,
+.location main p {
+  margin: 0 4.26667vw;
+}
+
+.home main .second .text-box h2, .home main .second .text-box p {
+  margin: 0 6.4vw;
+}
+
 * {
   border: 0;
   font-size: 100%;
@@ -133,20 +147,6 @@ ul {
 .footer .social li {
   display: inline;
   margin-right: 1.25rem;
-}
-
-.footer h2,
-.footer p,
-.footer ul, .home header h1,
-.home header p,
-.home header .btn, .home main, .location main h1,
-.location main li,
-.location main p {
-  margin: 0 4.26667vw;
-}
-
-.home main .second .text-box h2, .home main .second .text-box p {
-  margin: 0 6.4vw;
 }
 
 .home {
