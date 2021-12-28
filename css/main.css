@@ -110,11 +110,36 @@ ul {
   padding: 1.5rem;
 }
 
-.home header h1,
+.footer {
+  background-color: #141414;
+  margin-top: 7.5rem;
+  padding: 3rem 0;
+}
+
+.footer h2,
+.footer p,
+.footer ul {
+  color: white;
+}
+
+.footer p {
+  margin-top: 2.375rem;
+}
+
+.footer .social {
+  margin-top: 2.75rem;
+}
+
+.footer .social li {
+  display: inline;
+  margin-right: 1.25rem;
+}
+
+.footer h2,
+.footer p,
+.footer ul, .home header h1,
 .home header p,
-.home header .btn, .home main, .home footer h2,
-.home footer p,
-.home footer ul {
+.home header .btn, .home main {
   margin: 0 4.26667vw;
 }
 
@@ -198,24 +223,11 @@ ul {
   color: white;
 }
 
-.home footer {
-  background-color: #141414;
-  margin-top: 7.5rem;
-  padding: 3rem 0;
-}
-
-.home footer h2,
-.home footer p,
-.home footer ul {
-  color: white;
-}
-
-.home footer .social {
-  margin-top: 2.75rem;
-}
-
-.home footer .social li {
-  display: inline;
-  margin-right: 1.25rem;
+.location header {
+  background-image: url("../assets/mobile/image-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 146.66667vw;
+  width: 100vw;
 }
 /*# sourceMappingURL=main.css.map */

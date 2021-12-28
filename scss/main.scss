@@ -6,6 +6,8 @@
 
 @import "components/buttons";
 
+@import 'layouts/footer';
+
 // convert pixel to small screen view width
 @function small($pixel) {
   @return ($pixel / 375 * 100) + vw;
@@ -109,25 +111,17 @@
     }
   }
 
-  footer {
-    background-color: $black;
-    margin-top: rem(120);
-    padding: rem(48) 0;
 
-    h2,
-    p,
-    ul {
-      @extend %margin;
-      color: $lt-txt-color;
-    }
-
-    .social {
-        margin-top: rem(44);
-
-        li {
-            display: inline;
-            margin-right: rem(20);
-        }
-    }
-  }
 }
+
+.location {
+    header {
+        background-image: url('../assets/mobile/image-map.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: small(550);
+        width: 100vw;
+    }
+}
+
+

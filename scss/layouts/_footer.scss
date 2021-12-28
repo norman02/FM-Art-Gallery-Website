@@ -1,0 +1,25 @@
+.footer {
+    background-color: $black;
+    margin-top: rem(120);
+    padding: rem(48) 0;
+
+    h2,
+    p,
+    ul {
+      @extend %margin;
+      color: $lt-txt-color;
+    }
+
+    p {
+        margin-top: rem(38);
+    }
+
+    .social {
+        margin-top: rem(44);
+
+        li {
+            display: inline;
+            margin-right: rem(20);
+        }
+    }
+  }
