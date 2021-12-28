@@ -82,9 +82,23 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .heading-XL {
+    font-size: 6rem;
+    line-height: 5.5rem;
+  }
+}
+
 .heading-L {
   font-size: 3.125rem;
   line-height: 2.8125rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .heading-L {
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+  }
 }
 
 .heading-M {
@@ -103,9 +117,23 @@ ul {
   line-height: 1.75rem;
 }
 
+@media screen and (min-width: 1200px) {
+  .body-M {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+
 .body-S {
   font-size: 1rem;
   line-height: 1.625rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .body-S {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .btn {
