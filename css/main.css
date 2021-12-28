@@ -139,7 +139,9 @@ ul {
 .footer p,
 .footer ul, .home header h1,
 .home header p,
-.home header .btn, .home main {
+.home header .btn, .home main, .location main h1,
+.location main li,
+.location main p {
   margin: 0 4.26667vw;
 }
 
@@ -229,5 +231,36 @@ ul {
   background-size: cover;
   height: 146.66667vw;
   width: 100vw;
+}
+
+.location main {
+  padding-bottom: 3.8125rem;
+  padding-top: 3rem;
+  background-color: #141414;
+}
+
+.location main h1,
+.location main li,
+.location main p {
+  color: white;
+}
+
+.location main .heading-M {
+  color: #d5966c;
+  margin-bottom: 2rem;
+}
+
+.location main ul {
+  margin-bottom: 2rem;
+}
+
+.location .footer {
+  background-color: #d5966c;
+  margin-top: 0;
+}
+
+.location .footer h2,
+.location .footer p {
+  color: #141414;
 }
 /*# sourceMappingURL=main.css.map */
