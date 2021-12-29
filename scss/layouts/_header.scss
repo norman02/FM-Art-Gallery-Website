@@ -16,6 +16,10 @@ header {
   .btn {
     @extend %margin;
 
+    @include media-L {
+      margin: 0;
+    }
+
   }
   .img {
     background-image: url("../assets/mobile/image-hero@2x.jpg");
@@ -57,7 +61,7 @@ header {
     }
     
     @include media-L {
-      color: $white;
+      color: $white !important; //TODO: fix this conflict
       grid-area: head;
       margin: 0;
       margin-left: large(165);
@@ -75,6 +79,7 @@ header {
 
     @include media-L {
       grid-area: para;
+      margin-right: large(165);
     }
   }
 

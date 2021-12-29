@@ -1,14 +1,19 @@
 //convert pixels to rem
 @function rem($pixel) {
-    @return ($pixel / 16) + rem;
+  @return ($pixel / 16) + rem;
 }
 
 // convert pixel to small screen view width
 @function small($pixel) {
-    @return ($pixel / 375 * 100) + vw;
-  }
+  @return ($pixel / 375 * 100) + vw;
+}
 
-  // convert pixel to medium screen view width
+// convert pixel to medium screen view width
 @function medium($pixel) {
-    @return ($pixel / 768 * 100) + vw;
-  }
+  @return ($pixel / 768 * 100) + vw;
+}
+
+// convert pixel to large screen view width
+@function large($pixel) {
+  @return ($pixel / 1440 * 100) + vw;
+}

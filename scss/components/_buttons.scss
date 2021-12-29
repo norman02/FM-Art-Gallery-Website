@@ -1,36 +1,41 @@
 .btn {
-    color: $btn-txt-color;
-    display: inline-block;
-    flex-direction: row;
-    
+  color: $btn-txt-color;
+  display: inline-block;
 
-    &--forward {
-        background: linear-gradient(to right, $btn-main-bg 72.55%, $btn-secondary-bg 27.45%); 
-        padding: rem(24) 0 rem(28) rem(32);
-        padding: rem(24);
+  &--forward {
+    background: linear-gradient(
+      to right,
+      $btn-main-bg 72.55%,
+      $btn-secondary-bg 27.45%
+    );
+    padding: rem(24) 0 rem(28) rem(32);
+    padding: rem(24);
 
-        &::after {
-            content: "";
-            background-image: url('../assets/icon-arrow-right.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            display: inline;
-            padding: rem(24);
-        }
+    &::after {
+      content: "";
+      background-image: url("../assets/icon-arrow-right.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline;
+      padding: rem(24);
     }
+  }
 
-    &--back {
-        background: linear-gradient(to left, $btn-main-bg 72.55%, $btn-secondary-bg 27.45%); 
-        padding: rem(24);
+  &--back {
+    background: linear-gradient(
+      to left,
+      $btn-main-bg 72.55%,
+      $btn-secondary-bg 27.45%
+    );
+    padding: rem(24);
 
-        &::before {
-            content: "";
-            background-image: url('../assets/icon-arrow-left.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            display: inline;
-            padding: rem(24);
-        }
+    &::before {
+      content: "";
+      background-image: url("../assets/icon-arrow-left.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline;
+      padding: rem(24);
     }
-
+  }
 }

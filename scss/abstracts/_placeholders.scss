@@ -1,11 +1,15 @@
 %margin {
-    margin: 0 small(16);
+  margin: 0 small(16);
 
-    @include media-M {
-      margin: 0 medium(40);
-    }
+  @include media-M {
+    margin: 0 medium(40);
   }
-  
-  %deep-margin {
-    margin: 0 small(24);
+
+  @include media-L {
+    margin: 0 large(165);
   }
+}
+
+%deep-margin {
+  margin: 0 small(24);
+}
