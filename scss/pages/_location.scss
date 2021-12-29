@@ -14,6 +14,15 @@
           margin-left: medium(40);
         }
       }
+
+      @include media-L {
+        background-image: url('../assets/desktop/image-map.png');
+        height: large(600);
+
+        .btn {
+          margin-left: large(156);
+        }
+      }
     }
   
     main {
@@ -27,6 +36,12 @@
         padding-bottom: rem(85);
         padding-top: rem(88)
       }
+
+      @include media-L {
+        padding-bottom: rem(132);
+        padding-top: rem(130);
+      }
+
       h1,
       li,
       p {
@@ -36,6 +51,19 @@
         @include media-M {
           margin: 0 medium(40);
         }
+
+        @include media-L {
+          margin: 0;
+        }
+      }
+
+      .heading-L {
+
+        @include media-L {
+          margin-left: large(156);
+          margin-right: large(270);
+        }
+        
       }
   
       .heading-M {
@@ -51,6 +79,10 @@
 
       p {
         grid-area: para;
+
+        @include media-L {
+          margin-right: large(165);
+        }
       }
     }
   

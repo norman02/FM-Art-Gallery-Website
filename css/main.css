@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300;500&display=swap");
-header h1,
-header p,
-header .btn, .footer h2,
+.header h1,
+.header p,
+.header .btn, .footer h2,
 .footer p,
 .footer ul, .home main, .location main h1,
 .location main li,
@@ -10,9 +10,9 @@ header .btn, .footer h2,
 }
 
 @media screen and (min-width: 700px) {
-  header h1,
-  header p,
-  header .btn, .footer h2,
+  .header h1,
+  .header p,
+  .header .btn, .footer h2,
   .footer p,
   .footer ul, .home main, .location main h1,
   .location main li,
@@ -22,9 +22,9 @@ header .btn, .footer h2,
 }
 
 @media screen and (min-width: 1200px) {
-  header h1,
-  header p,
-  header .btn, .footer h2,
+  .header h1,
+  .header p,
+  .header .btn, .footer h2,
   .footer p,
   .footer ul, .home main, .location main h1,
   .location main li,
@@ -183,7 +183,7 @@ ul {
 }
 
 @media screen and (min-width: 700px) {
-  header {
+  .header {
     background-color: transparent;
     display: grid;
     grid-template-columns: auto auto;
@@ -191,21 +191,21 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-  header {
+  .header {
     background: linear-gradient(to right, #141414 50%, transparent 50%);
     display: grid;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  header h1,
-  header p,
-  header .btn {
+  .header h1,
+  .header p,
+  .header .btn {
     margin: 0;
   }
 }
 
-header .img {
+.header .img {
   background-image: url("../assets/mobile/image-hero@2x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -215,7 +215,7 @@ header .img {
 }
 
 @media screen and (min-width: 700px) {
-  header .img {
+  .header .img {
     background-image: url("../assets/tablet/image-hero.jpg");
     height: 91.14583vw;
     margin-right: -11.71875vw;
@@ -224,7 +224,7 @@ header .img {
 }
 
 @media screen and (min-width: 1200px) {
-  header .img {
+  .header .img {
     background-image: url("../assets/desktop/image-hero.jpg");
     background-position: center;
     height: 55.55556vw;
@@ -233,7 +233,7 @@ header .img {
 }
 
 @media screen and (min-width: 1200px) {
-  header .text-cont {
+  .header .text-cont {
     display: grid;
     grid-template-areas: 'head para' 'head button';
     position: absolute;
@@ -241,18 +241,18 @@ header .img {
   }
 }
 
-header h1 {
+.header h1 {
   margin-top: 2rem;
 }
 
 @media screen and (min-width: 700px) {
-  header h1 {
+  .header h1 {
     margin-top: 9.0625rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  header h1 {
+  .header h1 {
     color: white !important;
     grid-area: head;
     margin: 0;
@@ -262,29 +262,29 @@ header h1 {
   }
 }
 
-header p {
+.header p {
   margin-bottom: 2.3125rem;
 }
 
 @media screen and (min-width: 700px) {
-  header p {
+  .header p {
     margin-bottom: 3.3125rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  header p {
+  .header p {
     grid-area: para;
     margin-right: 11.45833vw;
   }
 }
 
-header .btn {
+.header .btn {
   margin-bottom: 7.5rem;
 }
 
 @media screen and (min-width: 1200px) {
-  header .btn {
+  .header .btn {
     grid-area: button;
     position: absolute;
   }
@@ -575,6 +575,16 @@ header .btn {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .location header {
+    background-image: url("../assets/desktop/image-map.png");
+    height: 41.66667vw;
+  }
+  .location header .btn {
+    margin-left: 10.83333vw;
+  }
+}
+
 .location main {
   padding-bottom: 3.8125rem;
   padding-top: 3rem;
@@ -587,6 +597,13 @@ header .btn {
     grid-template-areas: 'heading address' 'heading para';
     padding-bottom: 5.3125rem;
     padding-top: 5.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .location main {
+    padding-bottom: 8.25rem;
+    padding-top: 8.125rem;
   }
 }
 
@@ -604,6 +621,21 @@ header .btn {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .location main h1,
+  .location main li,
+  .location main p {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .location main .heading-L {
+    margin-left: 10.83333vw;
+    margin-right: 18.75vw;
+  }
+}
+
 .location main .heading-M {
   color: #d5966c;
   grid-area: heading;
@@ -617,6 +649,12 @@ header .btn {
 
 .location main p {
   grid-area: para;
+}
+
+@media screen and (min-width: 1200px) {
+  .location main p {
+    margin-right: 11.45833vw;
+  }
 }
 
 .location .footer {
