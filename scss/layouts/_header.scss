@@ -1,0 +1,89 @@
+header {
+
+    @include media-M {
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    @include media-L {
+      background: linear-gradient(to right, $black 50%, transparent 50%);
+      display: grid;
+    }
+
+  h1,
+  p,
+  .btn {
+    @extend %margin;
+
+  }
+  .img {
+    background-image: url("../assets/mobile/image-hero@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: small(240);
+    width: small(375);
+
+    @include media-M {
+        background-image: url('../assets/tablet/image-hero.jpg');
+        height: medium(700);
+        margin-right: medium(-90);
+        width: medium(437);
+    }
+
+    @include media-L {
+      background-image: url('../assets/desktop/image-hero.jpg');
+      background-position: center;
+      height: large(800);
+      width: 100vw;
+    }
+  }
+
+  .text-cont {
+    @include media-L {
+      display: grid;
+      grid-template-areas: 'head para' 'head button';
+      position: absolute;
+      margin-top: large(190);
+    }
+  }
+
+  h1 {
+    margin-top: rem(32);
+
+    @include media-M {
+        margin-top: rem(145);
+    }
+    
+    @include media-L {
+      color: $white;
+      grid-area: head;
+      margin: 0;
+      margin-left: large(165);
+      margin-right: large(246);
+      width: large(514);
+    }
+  }
+
+  p {
+    margin-bottom: rem(37);
+
+    @include media-M {
+        margin-bottom: rem(53);
+    }
+
+    @include media-L {
+      grid-area: para;
+    }
+  }
+
+  .btn {
+    margin-bottom: rem(120);
+
+    @include media-L {
+      grid-area: button;
+      position: absolute;
+    }
+  }
+}
