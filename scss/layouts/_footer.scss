@@ -12,11 +12,19 @@
 
     }
 
+    @include media-L {
+        padding: rem(80) 0;
+    }
+
     h2,
     p,
     ul {
       @extend %margin;
       color: $lt-txt-color;
+
+      @include media-M {
+          margin: 0;
+      }
     }
 
     p {

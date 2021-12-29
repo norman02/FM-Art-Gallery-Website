@@ -306,10 +306,24 @@ header .btn {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 5rem 0;
+  }
+}
+
 .footer h2,
 .footer p,
 .footer ul {
   color: white;
+}
+
+@media screen and (min-width: 700px) {
+  .footer h2,
+  .footer p,
+  .footer ul {
+    margin: 0;
+  }
 }
 
 .footer p {
